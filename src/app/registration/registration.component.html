@@ -1,0 +1,30 @@
+<div>
+  <form #signupForm="ngForm"(ngSubmit)="registerUser(signupForm)">
+    <fieldset>
+      <legend>Formulaire d'inscription</legend>
+
+
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label mt-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nom</font></font></label>
+
+        <input type="text" class="form-control" name="LastName"id="" aria-describedby="emailHelp" placeholder="nom"ngModel>
+
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label mt-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Prenom</font></font></label>
+
+        <input type="text" class="form-control" name="FirstName" id="" aria-describedby="emailHelp" placeholder="Prenom"ngModel>
+
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label mt-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">email</font></font></label>
+        <input type="email" class="form-control"name="Email" id="exampleInputPassword1" placeholder="Entrez l'e-mail" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label mt-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mot de passe</font></font></label>
+        <input type="password" class="form-control"name="password" id="exampleInputPassword1" placeholder="Mot de passe"ngModel>
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Enregistrer</button>
+    </fieldset>
+  </form>
+</div>
